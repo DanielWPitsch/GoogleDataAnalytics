@@ -1,0 +1,109 @@
+Classificando os dados
+
+
+Para começar, renomeie sua planilha. No canto superior esquerdo, clique em Planilha sem título e digite um novo nome. Você pode usar o nome student_performance_data ou um nome similar que descreva os dados que sua planilha contém.
+
+Agora, classifique por escola. Como você deseja classificar em várias colunas, você precisa selecionar todos os dados em sua planilha. Clique no retângulo em branco acima da linha 1 e à esquerda da coluna A. Isto permite selecionar todos os dados em sua planilha. 
+
+
+3. Em seguida, na barra de menu, selecione Dados depois Classificar intervalo. (Nota: para algumas versões do Planilhas Google, a seleção Opções de classificação de intervalo avançado pode aparecer no menu suspenso Dados em vez de Classificar intervalo). 
+
+4. Na janela pop-up, selecione Dados com linha de cabeçalho. Agora você pode escolher cabeçalhos de coluna específicos para classificar.
+
+5. Na lista suspensa Classificar por, escolha o cabeçalho escola. Em seguida, clique em A → Z para classificar em ordem crescente.
+
+6. Você também quer classificar por idade. Antes de poder classificar por idade, você precisa clicar em Adicionar outra coluna de classificação para escolher um segundo cabeçalho de coluna.
+
+7. Na lista suspensa Classificar por, escolha o cabeçalho idade. Desta vez, clique em Z → A para classificar em ordem decrescente. Desta forma, os alunos mais antigos serão os primeiros a serem listados.
+
+Sua janela pop-up deve aparecer assim: 
+
+
+8. Uma vez que ambas as seleções tenham sido feitas, clique em Classificar.
+
+Agora, se você passar pelos dados, notará que a faixa etária dos alunos do Gabriel Pereira (GP) é de 15-22 anos, e a faixa etária dos alunos do Mousinho da Silveira (MS) é de 15-20 anos. Parece que ambas as escolas têm faixas etárias semelhantes, mas a escola GP tem alunos que são um pouco mais velhos. 
+
+Ao classificar os dados, você descobriu um problema potencial com eles. Como este conjunto de dados representa o rendimento escolar dos alunos do ensino médio, qualquer idade acima de 18 anos pode indicar que foi cometido um erro ao entrar na idade daquele aluno. Agora você sabe quais dados de idade podem precisar ser pesquisados e corrigidos. Seu próximo passo é perguntar ao superintendente sobre a faixa etária legítima para os alunos do ensino médio público. Aí você saberá quais dados de idade estão incorretos e devem ser removidos. 
+
+
+Remoção de dados incorretos
+
+
+O superintendente lhe diz que o limite máximo de idade para o qual é fornecido o ensino público é de 19 anos e que a faixa etária deve ser de 15-19 anos para ambas as escolas. Qualquer estudante fora desta faixa etária deve ser excluído do conjunto de dados.
+
+Para limpar seus dados, você precisa remover as idades de 20, 21 e 22 anos do seu conjunto de dados. Você pode começar aplicando um filtro na coluna idade. A filtragem é o processo de mostrar apenas os dados que satisfazem um critério especificado, enquanto esconde os demais. A filtragem facilita a busca dos dados que você precisa.
+
+Primeiro, aplicar um filtro à coluna idade. Selecione a coluna idade, clicando na letra no topo da coluna (C).
+
+Em seguida, na barra de menu, selecione Dados depois Criar um filtro.
+
+Agora você pode inspecionar os valores na coluna idade indo até o topo da coluna e clicando no ícone Filtro ().
+
+No Planilhas Google, há nove valores possíveis para o campo (15, 16, 17, 18, 19, 20, 21, e 22). Você pode notar que todos os valores têm marcas de verificação. Filtre esta coluna para os valores que você deseja selecionar desmarcando todos os outros valores (15, 16, 17, 18, e 19). 
+
+
+5. Agora clique em OK Isto destacará as linhas que contêm as idades de 20, 21 e 22 anos. Depois de aplicar o filtro, deve haver nove linhas (sete para a escola GP e duas para a escola MS). 
+
+
+6. Para excluir as nove filas, primeiro selecione-as clicando nos números de suas linhas.
+
+7. Em seguida, na barra de menu, selecione Editar e Apagar linhas selecionadas.
+
+8. Clique no ícone Filtro na parte superior da coluna idade para inspecionar os valores mais uma vez. Agora que as três idades incorretas foram removidas (20, 21 e 22), restam apenas cinco idades (15, 16, 17, 18 e 19). As idades restantes são confiáveis e podem ser usadas para análise.
+
+9. Por fim, remova o filtro. Na barra de menu, selecione Dados e Remover o filtro.
+
+
+Preenchimento de dados ausentes
+
+
+O preenchimento de dados ausentes é uma parte importante da limpeza de dados. É seu trabalho preencher estes espaços em branco em seus dados com valores precisos.
+
+O superintendente quer saber quais fatores influenciam o desempenho dos alunos e a razão de um aluno escolher uma escola específica será importante saber para análise. A coluna motivos mostra o principal motivo pelo qual um estudante escolheu se matricular em uma escola específica, de acordo com sua resposta à pesquisa. Por exemplo, por causa da reputação da escola, ou porque ela oferece certos cursos, etc. Portanto, você precisa ter certeza de que a coluna motivos está completa e sem espaços em branco.
+
+Comece aplicando um filtro na planilha inteira. Clique em qualquer célula da planilha. Em seguida, na barra de menu, selecione Dados depois Criar um filtro.
+
+Todas as células agora estão destacadas e há filtros no topo de cada coluna contendo dados. Clique no ícone Filtro na coluna de motivo (K).
+
+Você pode notar que os valores dos dados na coluna motivo incluem espaços em branco. Filtre esta coluna para espaços em branco, desmarcando todos os outros valores (curso, casa, reputação). 
+
+
+4. Clique em OK Agora, sua planilha mostra todas as linhas em branco na coluna motivo.
+
+
+5. Para limpar seus dados, você precisa encontrar uma boa maneira de preencher estes valores ausentes. Neste caso, você não pode saber qual deve ser cada valor em falta (isto é, sem uma nova pesquisa, você não pode descobrir a motivo de cada aluno para escolher uma escola específica). Portanto, você pode substituir os valores ausentes pelo valor none_given. Para fazer isto enquanto a coluna ainda estiver filtrada para espaços em branco, digite none_given na primeira célula vazia (K2). Em seguida, pressione Enter. 
+
+6. Selecione novamente a célula K2. Um pequeno quadrado azul, conhecido como a alça de preenchimento, aparece no canto inferior direito da célula. Clique duas vezes na alça de preenchimento para preencher todas as outras células em branco com o valor none_given.
+
+7. Por fim, remova o filtro. Na barra de menu, selecione Dados e Remover o filtro. Se você descer a coluna de motivo, você deve descobrir que o valor none_given substituiu todos os espaços em branco na coluna motivo.
+
+Conversão de dados
+
+
+Durante o processo de análise de dados, às vezes é necessário alterar dados de texto (palavras) para dados numéricos (números). Por exemplo, alguns pacotes estatísticos como aqueles usados para realizar o aprendizado de máquinas só aceitarão valores de dados numéricos como entrada.
+
+Neste caso, o superintendente quer saber se o nível de educação de um dos pais é um fator significativo no desempenho dos alunos. Os dados relevantes estão nas colunas Medu e Fedu - que, respectivamente, se referem ao nível de educação dos pais de um aluno. Atualmente, os dados estão em formato texto. Para fins de análise, será útil conhecer o nível médio de educação dos pais de cada aluno. Para fazer este cálculo, primeiro é necessário converter os dados nas colunas Medu e Fedu para o formato numérico.
+
+Para fazer isso, você pode fazer corresponder valores numéricos específicos aos dados do texto em cada coluna. Comece com a coluna Medu. Se você clicar no ícone Filtro na parte superior da coluna Medu (G), você notará que a coluna contém os dados de texto mostrados na tabela abaixo. Você pode usar os seguintes códigos numéricos para cada pedaço de texto de dados: 
+
+
+Para começar, remova o filtro da coluna Medu.
+
+Em seguida, selecione os dados não filtrados da coluna Medu, clicando na letra da coluna (G).
+
+Em seguida, na barra de menu, selecione Editar, depois Procurar e substituir.
+
+Preencha a janela pop-up para o valor zero. Ao lado de Procurar, digite zero Ao lado de Substituir por, digite 0. Marque a caixa ao lado de Combinar conteúdo de célula inteira.
+
+
+5. Agora clique em Substituir todos.
+
+6. Ainda na janela pop-up, repita este processo (passos 4-5) para os outros quatro níveis educacionais: educação primária (4ª série), 6ª ao 9ª ano, ensino médio, e ensino superior.
+
+7. Após substituir todos os cinco níveis de ensino por valores numéricos, clique em Pronto para fechar a janela pop-up.
+
+8. Confira sua planilha. Todas as células da coluna Medu agora exibem valores numéricos.
+
+9. Alterar os dados do texto na coluna Fedu (H) da mesma forma. 
+
+
