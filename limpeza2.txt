@@ -1,0 +1,77 @@
+Selecionar e remover células em branco
+
+1. Destaque todas as colunas na planilha. Você pode destacar as colunas de A-H clicando no cabeçalho da Coluna A, segurando Shift e clicando no cabeçalho da Coluna H.
+
+2. Clique na guia Dados e escolha a opção Criar um filtro. No Microsoft Excel, isto se chama Filtro.
+
+3. Cada coluna agora mostra um triângulo verde na primeira linha ao lado do título da coluna. Clique no triângulo verde na Coluna B para acessar um novo menu.
+
+4. Nesse novo menu, clique em Filtrar por condição e abra o menu suspenso para selecionar Está vazio. Clique OK.
+
+No Excel, clique no menu suspenso, depois Filtro... depois certifique-se de que apenas (Em branco) esteja verificado. Clique OK.
+
+Você pode então rever uma lista de todas as linhas com células em branco naquela coluna.
+
+5. Selecione todas essas células e apague as linhas, exceto a linha de cabeçalhos das colunas.
+
+6. Retorne ao Filtro por condição e devolvê-lo a Nenhum. No Excel, clique em Limpar filtroda 'Coluna'.
+
+Observação: Agora você notará que qualquer linha que tivesse uma célula vazia na coluna A será removida (incluindo as linhas vazias extras após os dados).
+
+7. Repita isto para as colunas B-H.
+
+Todas as linhas que tinham células em branco são agora removidas da planilha.
+
+
+Transpor os dados - COPIA E COLA DE FORMA ESPECIAL
+
+
+A segunda técnica que você praticará ajudará a converter os dados do formato longo atual (mais linhas do que colunas) para o formato largo (mais colunas do que linhas). Esta ação é chamada de transposição. Para transpor seus dados:
+
+1. Destaque e copie os dados que você deseja transpor, incluindo as etiquetas das colunas. Você pode fazer isso destacando as colunas A-H. No Excel, destaque apenas as células relevantes ( A1-H45) em vez dos cabeçalhos.
+
+2. Clique com o botão direito do mouse na célula I1. É por aqui que você quer que os dados transpostos comecem.
+
+3. Passe o mouse sobre o Colar Especial a partir do menu do clique direito. Selecione a opção Transposto. No Excel, selecione o ícone Transpor sob as opções de colar.
+
+Agora você deve encontrar os dados transformados no novo formato amplo. Neste ponto, você deve remover os dados longos originais da planilha de cálculo.
+
+4. Elimine os dados longos anteriores. A maneira mais fácil de fazer isso é clicar na Coluna A, de modo que a coluna inteira seja destacada. Em seguida, segure a tecla Shift e clique na coluna H. Estas colunas devem ser destacadas. Clique com o botão direito do mouse na área destacada e selecione Excluir colunas A - H. 
+
+
+Livre-se de espaços extras em células com dados de string
+
+
+Agora que você já transpôs os dados, elimine os espaços extras nos valores das células.
+
+1. Destaque os dados na planilha.
+
+2. Clique na guia Data, depois passe o mouse sobre Data cleanup e selecione Trim whitespace.
+
+No Excel, você pode usar o comando TRIM para se livrar dos espaços brancos. Em qualquer espaço abaixo de seus dados (como a célula A10), digite =TRIM(A1). Em seguida, arraste o canto inferior direito da célula para o canto inferior direito para chamar os dados sem os espaços em branco.
+
+Agora todos os espaços extras nas células foram removidos.
+
+
+Alterar o texto em maiúsculas/minúsculas/tamanho correspondente 
+
+
+A seguir, você processará os dados de string. A maneira mais fácil de limpar os dados de string dependerá do programa de planilhas que você estiver usando. Se você estiver usando o Excel, você usará uma fórmula simples. Se você estiver usando o Google Sheets, poderá usar um Add-On para fazer isso com alguns cliques. Siga os passos na seção relevante abaixo.
+
+Microsoft Excel
+
+
+Se você estiver usando o Microsoft Excel, esta documentação explica como usar uma fórmula para alterar o caso de uma cadeia de texto. Siga estas instruções para limpar o texto de string e depois passe para a seção de confirmação e reflexão desta atividade.
+
+Google Planilhas
+
+
+Se você estiver completando este exercício usando o Google Sheets, precisará instalar um suplemento que lhe dará a funcionalidade necessária para limpar facilmente os dados de string e mudar os casos.
+
+Instruções complementares para Google Planilhas Add-on:
+
+Clique na opção Add-Ons na parte superior das folhas do Google.
+
+Clique em Obter add-ons.
+
+Busca por ChangeCase. Deveria parecer assim: 
