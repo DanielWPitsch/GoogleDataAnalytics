@@ -75,3 +75,27 @@ Clique na opção Add-Ons na parte superior das folhas do Google.
 Clique em Obter add-ons.
 
 Busca por ChangeCase. Deveria parecer assim: 
+
+4. . Clique em Instalar para instalar o add-on. Ele pode pedir que você faça o login ou verifique as permissões de instalação.
+
+Uma vez instalado com sucesso o add-on, você pode acessá-lo clicando novamente no menu Add-ons.
+
+Agora, você pode mudar o tamanho do texto dos dados que aparecem. Para alterar o texto na coluna C para todas as letras maiúsculas:
+
+1. Clique na coluna C. Certifique-se de desmarcar o cabeçalho da coluna, a menos que você queira mudar o tamanho da letra também (o que você não quer).
+
+2. Clique na guia Add-Ons e selecione ChangeCase. Selecione a opção Todas as letras maiúsculas. Observe as outras opções que você poderia ter escolhido, se necessário.
+
+
+Excluir toda formatação
+
+
+Se você quiser limpar a formatação de qualquer célula ou de todas, você pode encontrar o comando na guia Formatar. Para uma formatação limpa:
+
+1. Selecione os dados para os quais você deseja excluir a formatação. Neste caso, destaque todos os dados da planilha clicando e arrastando sobre as Linhas 1-8.
+
+2. Clique na guia Formatar e selecione a opção Limpar formatação.
+
+No Excel, vá para a guia Home, depois passe o mouse sobre Clear e selecione Clear Formats.
+
+Você notará que todas as células tiveram sua formatação removida.
