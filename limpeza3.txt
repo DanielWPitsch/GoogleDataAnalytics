@@ -1,0 +1,130 @@
+Pergunta 1
+
+Visão geral da atividade 
+
+
+Até agora, você já foi introduzido a algumas técnicas úteis para a limpeza de dados de planilhas, tais como classificação e filtragem. Nesta atividade, você continuará a desenvolver suas habilidades de limpeza de dados usando funções de planilhas.
+
+Imagine que você é um analista de dados trabalhando para uma agência de marketing sediada em São Francisco. A agência de marketing quer entrar em contato com as lojas de chá Boba locais para saber sobre uma possível colaboração para uma nova campanha de marketing. A agência planeja visitar as lojas mais bem classificadas num raio de 10 milhas do centro de sua área alvo. Para auxiliar no planejamento, a agência pede que sua equipe analise dados externos relacionados a classificações e localização de lojas de chá Boba em São Francisco. Um de seus colegas de equipe criou uma planilha de cálculo a partir de uma fonte on-line. No entanto, os dados não estão na melhor forma.
+
+Sua tarefa é identificar os elementos sujos no conjunto de dados e limpá-los.
+
+Ao concluir esta atividade, você será capaz de identificar elementos sujos em um conjunto de dados, remover dados duplicados e usar as funções COUNTIF e SPLIT para ajudar a limpar os dados. 
+
+
+O que você vai precisar
+
+O conjunto de dados inclui os seguintes cabeçalhos de coluna:
+
+
+Para começar, acesse a planilha que contém os dados. Clique no link e faça uma cópia da planilha.
+
+Ou, se você não tiver uma conta Google, você pode baixar o conjunto de dados diretamente do anexo abaixo: 
+
+
+Identificar os elementos sujos em seus dados
+
+
+Como analista de dados, seu trabalho é apresentar dados que sejam legíveis, precisos e visualmente atraentes. Limpar seus dados o ajuda a atingir este objetivo. O primeiro passo é identificar os elementos sujos em seus dados.
+
+Primeiro, renomeie sua planilha. Clique Planilha sem nome e digite um novo nome. Você pode usar o nome sf_boba_tea_shop_data ou um nome similar que descreva os dados que sua planilha contém.
+
+Caso deseje obter uma melhor visualização de seus dados, é possível ampliar as colunas mais largas arrastando o limite direito do título da coluna. Isto pode se aplicar ao nome (B), endereço (D), e colunas (F) lat-long.
+
+Agora, revise seus dados e considere quaisquer problemas que você possa ter que resolver. Veja a seguir exemplos de erros que você pode identificar e corrigir rapidamente. Esta não é uma lista abrangente de todos os problemas potenciais, mas é um ótimo ponto de partida para a limpeza de dados. 
+
+Primeiro, há pelo menos uma linha duplicada (linhas 20 e 21) em seu conjunto de dados.
+
+Em segundo lugar, todas as classificações de Yelp devem cair entre 0 e 5. Entretanto, pelo menos uma classificação (na célula C8) está fora dessa faixa. 
+
+Finalmente, os dados de latitude e longitude estão contidos em uma única coluna (F). Para que alguém possa utilizar esses dados para análise, os dois valores devem estar em colunas separadas.
+
+Remover duplicações
+
+
+O primeiro passo é eliminar quaisquer entradas duplicadas de seu conjunto de dados. Como melhor prática, as duplicatas devem ser removidas, mesmo que não sejam facilmente aparentes. 
+
+Para começar, selecione as colunas de A a F. 
+
+Depois,na barra do menu, escolha Data e Remover duplicações.
+
+Na janela pop-up, clique em Os dados têm linha de cabeçalho. Você quer remover duplicatas de id's de lojas boba e nomes de lojas Boba.Na seção Colunas para análise, certifique-se de que as colunas relevantes (id, nome) estejam selecionadas. 
+
+4. Uma vez que tudo tenha sido selecionado, clique em Remover duplicatas.
+
+5. Se feito corretamente, 3 filas duplicadas serão encontradas e removidas e 604 filas permanecerão. 
+
+
+Corrigir os dados de classificação
+
+
+Em seguida, limpe quaisquer dados que não façam sentido. As taxas de Yelp devem ser inferiores a 5 e superiores a 0. Agora, você determinará quantas entradas são imprecisas e as corrigirá. Você pode usar a função COUNTIF para realizar esta tarefa.
+
+A função COUNTIF conta rapidamente quantos itens em um intervalo de células atendem a um determinado critério. Na célula I2, digite =COUNTIF(C:C,">5"). A primeira entrada (C:C) refere-se ao intervalo onde você está contando os dados. Neste caso, a faixa é toda a coluna de classificação (C), que contém as classificações Yelp. A segunda entrada se refere ao critério (>5), e diz à função para contar todos os valores superiores a 5.
+
+Pressione Enter. Você vai notar que a função retorna um valor de 9. Isto lhe diz que seu conjunto de dados contém 9 entradas que têm uma classificação superior a 5.
+
+
+Como analista de dados, é seu trabalho decidir o que fazer com valores incorretos ou pedir conselhos ao proprietário do conjunto de dados se você não estiver seguro. Neste caso, uma abordagem eficaz seria procurar no Yelp as classificações reais. Para esta atividade, você pode simplesmente substituir as classificações incorretas pelo número 5. Uma maneira eficiente de substituir as classificações é classificar numericamente os dados da maior para a menor classificação.
+
+3. Selecione as colunas de A a F.
+
+4. Agora, na barra de menu, escolha Data e Sort range.
+
+5. Na janela pop-up, marque a caixa ao lado de Os dados têm linha de cabeçalho. Organize por classificação de Z →A. Desta forma, as mais altas classificações serão listadas em primeiro lugar. 
+
+
+6. Clique em Sort. Confira sua planilha. No início da coluna de classificação, você deve encontrar agora as 9 linhas que têm valores incorretos (classificação > 5).
+
+
+7. Em seguida, selecione o intervalo de células C2:C10. Pressione delete para apagar os valores que são maiores que 5.
+
+8. Pressione apagar para apagar os valores que são maiores que 5. Na célula C2, tipo 5. Em seguida, arraste a alça de preenchimento para a célula C10 para preencher as células restantes com 5.
+
+9. Após substituir as classificações incorretas pelo número 5, você pode notar que o novo valor na célula I2 é 0. A saída da função COUNTIF agora reflete as mudanças em seu conjunto de dados. Isto confirma que a coluna de classificação não contém mais valores superiores a 5.
+
+10. Finalmente, exclua a fórmula da célula I2, já que você não precisa mais desta informação. 
+
+
+Limpar os dados de latitude e longitude
+
+
+Em seguida, limpe os dados de latitude e longitude colocando cada valor em uma coluna separada. Você pode usar a função SPLIT para realizar esta tarefa.
+
+1. A função SPLIT divide o texto em torno de um caractere ou uma string especificada, e coloca cada fragmento de texto em uma célula separada na linha. A função SPLIT dividirá a única coluna de lat-long em duas colunas separadas, uma para latitude e a outra para longitude. Na célula G2, digite =SPLIT(F2,"-"). A primeira entrada (F2) refere-se à célula onde se encontra o texto. A segunda entrada ("-") refere-se ao fato de que você está dividindo o texto com base no sinal de menos.
+
+
+2. Pressione Enter. O resultado mostra cada fragmento de texto em uma célula diferente.
+
+
+3. Selecione novamente a célula G2. Na célula G2, clique duas vezes sobre a alça de preenchimento para dividir todas as entradas lat-long restantes.
+
+4. Agora acrescente cabeçalhos de coluna às duas novas colunas (G e H). Na célula G1, digite lat. Na célula H1, digite long.
+
+5. Em seguida, substitua os dados lat-long originais na coluna F pelas novas entradas divididas nas colunas G e H. Selecione as colunas G e H, clique com o botão direito do mouse e escolha Copiar.
+
+
+6. Em seguida, selecione a coluna F, clique com o botão direito do mouse e escolha Colar especial e Colar apenas valores.
+
+
+7. Agora a nova coluna lat é a coluna F, e a nova coluna long é a coluna G. Ajuste a largura da coluna lat (F) para se ajustar aos dados, arrastando o limite direito do cabeçalho da coluna. 
+
+
+8. Em seguida, selecione a coluna H, clique com o botão direito do mouse e selecione Excluir coluna.
+
+9. Finalmente, os valores de longitude devem ser negativos para que sejam coordenadas precisas para o mapeamento. Para tornar negativos os valores na coluna long, multiplicá-los por -1. Na célula H2, digite =G2*-1. O asterisco (*) é o operador de multiplicação. Pressione Enter. 
+
+10. Ainda na célula H2, clique duas vezes na alça de preenchimento para preencher o resto dos valores.
+
+11. Em seguida, adicione um cabeçalho de coluna. Na célula H1, digite long.
+
+12. Agora, substitua os dados de longitude na coluna G pelos novos dados na coluna H. Selecione a coluna H, clique com o botão direito do mouse, e escolha Copiar.
+
+13. Selecione a coluna G, clique com o botão direito do mouse, e escolha Colar especial e Colar apenas valores. 
+
+14. Em seguida, selecione a coluna H, clique com o botão direito do mouse, e escolha Excluir coluna.
+
+As colunas F e G devem se parecer com estas: 
+
+
+Agora seus dados estão mais limpos, claros e fáceis de usar. 
