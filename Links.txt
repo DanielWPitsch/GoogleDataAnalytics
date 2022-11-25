@@ -6,3 +6,5 @@ https://news.mit.edu/2016/automating-big-data-analysis-1021
 
 https://technologyadvice.com/blog/information-technology/top-10-workflow-automation-software/
 
+https://www.coursera.org/learn/analisar-os-dados-para-responder-as-perguntas/quiz/iAg3O/atividade-pratica-como-classificar-consultas-no-sql/attempt
+
